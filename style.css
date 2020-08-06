@@ -1,0 +1,13 @@
+header{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    text-align: center;
+}
+h1,h2
+main{
+    height: 80vh;
+}
+footer{
+    height: 10vh;
+}
