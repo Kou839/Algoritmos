@@ -45,4 +45,32 @@ for numero in listaNumeros:
 print (listaPares)
 par = lambda elemento : elemento %2 == 0
 pares = list (filter(par,listaNumeros))
-print (pares)
+print (pares) 
+
+#Reduce
+from functools   import reduce
+lista= [1,2,3,4]
+acumulador= 0 
+
+for elemento in lista: 
+    acumulador+= elemento
+print(acumulador)
+
+sumatoria= lambda acumulador= 0, elemento= 0: acumulador + elemento
+resultado= reduce (sumatoria, lista)/len(lista) 
+print(resultado) 
+
+print(reduce( lambda acumulador= 0, elemento= 0: acumulador + elemento,lista)/len (lista)) 
+#------------------------------------------------------------------------------------------ 
+
+lista= [1,2,3,4]  
+acumulador= 1
+for elemento in lista:  
+    acumulador*=elemento 
+print(acumulador)
+
+multiplicacion= lambda acumulador= 1, elemento= 0: acumulador*elemento 
+resultado= reduce (multiplicacion, lista) 
+print(resultado)
+
+print(reduce(lambda acumulador= 0, elemento= 0: acumulador*elemento,lista))
