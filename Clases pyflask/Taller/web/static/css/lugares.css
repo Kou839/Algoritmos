@@ -1,0 +1,15 @@
+a{
+    appearance: button;
+    text-decoration: khaki;  
+    color: black; 
+    width: 100px;
+    height: 30px;
+    border-radius: 30px; 
+    text-align:  center; 
+    box-shadow: coral;
+    scroll-padding-block-start: 16px;
+
+}
+body{
+    background-color: gray;
+}
