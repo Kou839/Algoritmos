@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP | doctors</title> 
+    <link rel="stylesheet" href="{{url_for ('static', filename= 'css/doctors.css')}}">
+</head>
+<body>
+    <h1>Estos son los doctores: 
+        Mikael: ginecólogo
+        Evanlleline: pediatra
+        Liz: Uróloga 
+        Marco: Médico Internista
+        Santiago: Anestesiólogo
+    </h1> 
+    <h2>tu ip es {{userip}}</h2> 
+    <h3>tus doctores son {{doctores}}</h3> 
+    <a href="/home"></a>
+    
+</body>
+</html>
