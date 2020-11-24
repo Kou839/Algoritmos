@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App | curioso</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename= 'css/curioso.css')}}">
+</head>
+<body>
+    <header id="curiosos">
+        <div class="container-fluid header-content">
+            <h1 id="title">sobre mi</h1>
+            <h2 id="header-quote">Hola, soy Juan Estaban y hablemos de lo que me gusta <br><q>Me gusta dibujar, me gustan las artes marciales y me gusta leer manga.</q>
+                
+            </h2>
+            <h3>tu ip es {{userip}}</h3>
+            <hr style="color: black; width: 25%;">
+        </div>
+    </header>
+    <a href="/home"></a>
+</body>
+</html>

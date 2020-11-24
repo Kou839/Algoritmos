@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP | conocenos</title> 
+    <link rel="stylesheet" href="{{url_for ('static', filename= 'css/conocenos.css')}}">
+</head>
+<body>
+    <h1>Nuestras instalaciones</h1>  
+    <h2>Tu ip es {{userip}}</h2> 
+    <h3>tus instalaciones son: {{conocenos}} </h3> 
+    
+    
+    
+    
+    <main class="container-fluid" id="main">
+        <div class="container-fluid short-biography" id="tribute-info">
+            <div id="img-div">
+                <img src="{{url_for('static', filename= 'images/quirofano.jpg')}}" alt="instalaciones">
+                <div class="short-biography-content">
+                <p>Quirófano, instalación moderna</p>
+        
+                <img src="{{url_for('static', filename= 'images/espera.jpg')}}" alt="instalaciones">
+                <div class="short-biography-content">
+                <p1>esta es la sala de espera</p1> 
+
+                <img src="{{url_for('static', filename= 'images/UCI.png')}}" alt="instalaciones">
+                <div class="short-biography-content">
+                <p2>Uci la componen más de 200 camas de uci</p2>
+
+                <img src="{{url_for('static', filename= 'images/urgencias.jpg')}}" alt="instalaciones">
+                <div class="short-biography-content">
+                <p2>Sala de urgencias</p2>
+            
+            </div>
+        </div>
+    </main>
+
+    <a href="/home"></a>
+</body> 
+
+</html>
